@@ -1,0 +1,50 @@
+<header class="page-header">
+  <div class="container page-header__container">
+    <nav class="navigation">
+      <a class="link logo" href="/">
+        <picture>
+          <source
+            srcset="./images/mobile/logo.png 1x, ./images/mobile/logo@2x.png 2x"
+            media="(max-width: 797px)"
+          />
+          <source
+            srcset="./images/tablet/logo.png 1x, ./images/tablet/logo@2x.png 2x"
+            media="(max-width: 1199px)"
+          />
+          <source
+            srcset="
+              ./images/desktop/logo.png    1x,
+              ./images/desktop/logo@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <img class="logo__img" src="./images/mobile/logo.png" alt="logo" />
+        </picture>
+      </a>
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a href="#home" class="navigation__link">Home</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#about" class="navigation__link">About us</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#advantages" class="navigation__link">How it’s made?</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#products" class="navigation__link">Our products</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#contacts" class="navigation__link">Contact</a>
+        </li>
+      </ul>
+      <button type="button" class="mobile-menu-open" data-menu-open>
+        <svg class="mobile-menu-open__icon" width="32" height="32">
+          <use href="./images/sprite.svg#icon-burger"></use>
+        </svg>
+      </button>
+      <button type="button" class="button-header">Buy now <span>&#x276f</span>
+      </button>
+    </nav>
+  </div>
+</header>

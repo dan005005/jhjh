@@ -1,0 +1,361 @@
+.container {
+  position: relative;
+}
+.box-hero {
+  width: 247px;
+  height: 453px;
+  margin-left: 0;
+  margin-bottom: 0;
+  padding-top: 60px;
+  position: relative;
+  background-image: url('../images/tablet/points.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+}
+
+.hero__title {
+  color: var(--white-font-color);
+  font-family: var(--title-font);
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.25;
+  margin-bottom: 32px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.hero_title-part {
+  font-size: 28px;
+  line-height: 1.22;
+}
+
+.hero__btn {
+  display: flex;
+  gap: 8px;
+}
+.hero__item {
+  padding-bottom: 0px;
+}
+
+.link-products {
+  color: #000000;
+  background: var(--backgraund-color);
+  border: 2px solid #f8d24e;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 1.25;
+  width: 62px;
+  height: 24px;
+  background: #84a278;
+  padding: 5px 12px;
+
+  &:hover {
+    border-color: #0a8817;
+  }
+  &:focus {
+    border: 2px solid #0a8817;
+    color: white;
+  }
+}
+.link-made {
+  background: #84a278;
+  width: 82px;
+  height: 24px;
+  text-align: center;
+  text-decoration-line: underline;
+  text-decoration-color: var(--axent-colour);
+  color: var(--axent-colour);
+  border: none;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 1.25;
+
+  &:hover {
+    color: #0a8817;
+    text-decoration-color: #0a8817;
+  }
+  &:focus {
+    color: white;
+    text-decoration-color: white;
+  }
+}
+.hero__points {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 320px;
+}
+.hero__main-photo {
+  position: absolute;
+  bottom: -44px;
+  left: 17px;
+}
+.main_ice-cream {
+  width: 230px;
+}
+
+@media screen and (max-width: 767px) {
+  .hero__additional-content {
+    display: none;
+  }
+  .hero__btn {
+    margin-bottom: 239px;
+  }
+  .container {
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero__info {
+    display: none;
+  }
+  .box-hero {
+    position: relative;
+    background-image: url('../images/mobile/points.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    font-size: 18px;
+    line-height: 1.25;
+    margin-bottom: 20px;
+    letter-spacing: 0.04em;
+    width: 181px;
+  }
+
+  .hero_title-part {
+    font-size: 24px;
+  }
+  .hero__additional-content {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 152px;
+  }
+  .hero__text {
+    margin-left: 185px;
+    width: 151px;
+    height: 85px;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.4;
+  }
+  .hero__btn {
+    margin-bottom: 28px;
+  }
+  .hero__points {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 768px;
+  }
+  .hero__photo {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+  }
+  .hero__main-photo {
+    position: absolute;
+    bottom: -42px;
+    margin-left: 325px;
+  }
+  .main_ice-cream {
+    width: auto;
+  }
+  .hero__info-number {
+    font-size: 28px;
+    line-height: 1.21;
+    text-align: right;
+    letter-spacing: 0.04em;
+    color: #000000;
+    font-weight: 900;
+    margin-bottom: 8px;
+  }
+  .hero__info-text {
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25;
+    text-align: right;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+  }
+  .hero__info-text-margin {
+    margin-bottom: 20px;
+  }
+  .hero__info {
+    position: absolute;
+    top: 28px;
+    right: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .box-hero {
+    width: 656px;
+    height: 343px;
+    padding-top: 32px;
+  }
+  .hero__points {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 768px;
+  }
+  .hero__arrow {
+    position: absolute;
+    width: 41px;
+    height: 16px;
+    left: 185px;
+    bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .box-hero {
+    padding-top: 45px;
+    width: 1200px;
+    height: 584px;
+    position: relative;
+    background-image: url('../images/desktop/points.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    // padding-left: 16px;
+    // padding-right: 16px;
+    // height: 560px;
+  }
+
+  .hero__title {
+    font-size: 38px;
+    line-height: 1.27;
+    margin-bottom: 28px;
+    letter-spacing: 0.04em;
+    width: 367px;
+  }
+
+  .hero_title-part {
+    font-size: 38px;
+  }
+
+  .hero__additional-content {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 225px;
+  }
+  .hero__photo {
+    width: 225px;
+  }
+
+  .hero__text {
+    margin-left: 255px;
+    margin-top: 50px;
+    width: 200px;
+    height: 112px;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  .hero__arrow {
+    position: absolute;
+    width: 41px;
+    height: 16px;
+    left: 255px;
+    bottom: 45px;
+  }
+
+  .hero__btn {
+    margin-bottom: 42px;
+  }
+  .container {
+    width: 1200px;
+  }
+  .hero__points {
+    position: absolute;
+    bottom: 45px;
+    width: 1200px;
+    height: 354px;
+  }
+  .ice-creams {
+    width: 225px;
+  }
+
+  .hero__photo {
+    z-index: 2;
+    position: absolute;
+    top: -5px;
+    left: 15px;
+  }
+  .link-products {
+    color: #000000;
+    background: var(--backgraund-color);
+    border: 2px solid #f8d24e;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.28;
+    width: 134px;
+    height: 42px;
+    background: #84a278;
+    padding: 12px 34px;
+    margin-right: 12px;
+  }
+
+  .link-made {
+    background: #84a278;
+    width: 154px;
+    height: 40px;
+    text-align: center;
+    text-decoration-line: underline;
+    text-decoration-color: var(--axent-colour);
+    color: var(--axent-colour);
+    border: none;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.28;
+  }
+  .hero__main-photo {
+    position: absolute;
+    bottom: -96px;
+    left: 233px;
+  }
+
+  .main_ice-cream {
+    width: auto;
+  }
+
+  .hero__info-number {
+    font-size: 46px;
+    line-height: 1.21;
+    text-align: right;
+    letter-spacing: 0.04em;
+    color: #000000;
+    font-weight: 900;
+    margin-bottom: 4px;
+  }
+
+  .hero__info-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.25;
+    text-align: right;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+  }
+
+  .hero__info-text-margin {
+    margin-bottom: 16px;
+  }
+
+  .hero__info {
+    position: absolute;
+    top: 56px;
+    right: 0;
+  }
+}
